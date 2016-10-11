@@ -31,7 +31,7 @@ footer{
 }
 
 .note {
-  background-color: bisque;
+  background-color: transparent;
   border-radius: 4px;
   width: 100%;
   height: 100%;
@@ -163,7 +163,7 @@ footer{
 
 @-webkit-keyframes line {
   0% {
-    background: #fff;
+    background: #dbdbdb;
   }
   30% {
     background: #F36E6B;
@@ -172,7 +172,7 @@ footer{
 
 @keyframes line {
   0% {
-    background: #fff;
+    background: #dbdbdb;
   }
   30% {
     background: #F36E6B;
@@ -189,10 +189,6 @@ footer{
   }
 }
 @media (max-width: 480px) {
-  #social-container #social-links, #social-container #tooltip {
-    display: none;
-  }
-
   #board {
     width: 352px;
   }
