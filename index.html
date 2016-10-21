@@ -1,1329 +1,1648 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Beatmap</title>
-    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
-
-
-</head>
-<body>
-    <div class="logo-head">
-    <img class="logo" src="img/beatmap.png"/>
-    </div>
-    <div class="align">
-    <!-- IT'S ABOUT TO GET WILD FOR 1000 LINES -->
-    <div class='loading' id='board'>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='0'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='1'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='2'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='3'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='4'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='5'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='6'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='7'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='8'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='9'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='10'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='11'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='12'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='13'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='14'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-    <span class='holder' data-note='15'>
-      <div class='note'>
-        <div class='ripple'></div>
-      </div>
-    </span>
-  </div>
-    <div id='markers'>
-    <span>&#8226;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#8226;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#8226;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#8226;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-    <span>&#9702;</span>
-  </div>      
-<footer>&copy; Cieran Neeson, Manus Gallagher, Joey Hughes</footer>
-        
-</div>
-
-
-    <!-- WON'T SOMEBODY PLEASE THINK OF THE CHILDREN -->
-<script src='js/jquery.min.js'></script>
-<script src='js/jquery-ui.min.js'></script>
-<script src='js/howler.min.js'></script>
-<script src="js/index.js"></script> 
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Beatmap</title>
+      <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="logo-head">
+         <img class="logo" src="img/beatmap.png"/>
+      </div>
+      <div class="align">
+         <!-- IT'S ABOUT TO GET WILD FOR 1000 LINES -->
+         <div class='loading' id='board'>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='0'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='1'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='2'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='3'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='4'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='5'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='6'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='7'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='8'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='9'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='10'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='11'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='12'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='13'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='14'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='holder' data-note='15'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+			
+			<span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='openHat' data-note='16'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+			
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='closedHat' data-note='17'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+			
+			<span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='snare' data-note='18'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+			
+			<span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+            <span class='kick' data-note='19'>
+               <div class='note'>
+                  <div class='ripple'></div>
+               </div>
+            </span>
+         </div>
+         <div id='markers'>
+            <span>&#8226;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#8226;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#8226;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#8226;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+            <span>&#9702;</span>
+         </div>
+         <footer>&copy; Cieran Neeson, Manus Gallagher, Joey Hughes</footer>
+      </div>
+      <!-- WON'T SOMEBODY PLEASE THINK OF THE CHILDREN -->
+      <script src='js/jquery.min.js'></script>
+      <script src='js/jquery-ui.min.js'></script>
+      <script src='js/howler.min.js'></script>
+      <script src="js/index.js"></script> 
+	  
+   </body>
 </html>

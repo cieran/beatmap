@@ -1,6 +1,6 @@
 html{
-    min-height: 100%;
- }
+	
+}
 .logo{
     width: 250px;
     text-align: left;
@@ -22,8 +22,8 @@ footer{
 
 .holder {
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   margin: 2px;
   border: 1px solid black;
   border-radius: 4px;
@@ -49,7 +49,7 @@ footer{
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-  width: 480px;
+  width: 416px;
   font-size: 0;
   z-index:4;
   background-color: transparent;
@@ -58,6 +58,7 @@ footer{
 }
 
 .align{
+  margin-top: -3%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -259,8 +260,8 @@ footer{
 #markers span {
   font-size: 1rem;
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   margin: 3px;
   margin-bottom: 0;
   background-color: none;
@@ -277,4 +278,426 @@ footer{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.openHat {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.forward .openHat {
+  -webkit-animation: openHatSequencer 3s linear infinite;
+          animation: openHatSequencer 3s linear infinite;
+}
+.forward .openHat:nth-child(16n + 0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.forward .openHat:nth-child(16n + 1) {
+  -webkit-animation-delay: 0.1875s;
+          animation-delay: 0.1875s;
+}
+.forward .openHat:nth-child(16n + 2) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+.forward .openHat:nth-child(16n + 3) {
+  -webkit-animation-delay: 0.5625s;
+          animation-delay: 0.5625s;
+}
+.forward .openHat:nth-child(16n + 4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.forward .openHat:nth-child(16n + 5) {
+  -webkit-animation-delay: 0.9375s;
+          animation-delay: 0.9375s;
+}
+.forward .openHat:nth-child(16n + 6) {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
+}
+.forward .openHat:nth-child(16n + 7) {
+  -webkit-animation-delay: 1.3125s;
+          animation-delay: 1.3125s;
+}
+.forward .openHat:nth-child(16n + 8) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.forward .openHat:nth-child(16n + 9) {
+  -webkit-animation-delay: 1.6875s;
+          animation-delay: 1.6875s;
+}
+.forward .openHat:nth-child(16n + 10) {
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+.forward .openHat:nth-child(16n + 11) {
+  -webkit-animation-delay: 2.0625s;
+          animation-delay: 2.0625s;
+}
+.forward .openHat:nth-child(16n + 12) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+.forward .openHat:nth-child(16n + 13) {
+  -webkit-animation-delay: 2.4375s;
+          animation-delay: 2.4375s;
+}
+.forward .openHat:nth-child(16n + 14) {
+  -webkit-animation-delay: 2.625s;
+          animation-delay: 2.625s;
+}
+.forward .openHat:nth-child(16n + 15) {
+  -webkit-animation-delay: 2.8125s;
+          animation-delay: 2.8125s;
+}
+.forward .openHat:nth-child(16n + 16) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.loading .openHat {
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+@-webkit-keyframes openHatSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #3333cc;
+  }
+}
+
+@keyframes openHatSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #3333cc;
+  }
+}
+
+
+.closedHat {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.forward .closedHat {
+  -webkit-animation: closedHatSequencer 3s linear infinite;
+          animation: closedHatSequencer 3s linear infinite;
+}
+.forward .closedHat:nth-child(16n + 0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.forward .closedHat:nth-child(16n + 1) {
+  -webkit-animation-delay: 0.1875s;
+          animation-delay: 0.1875s;
+}
+.forward .closedHat:nth-child(16n + 2) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+.forward .closedHat:nth-child(16n + 3) {
+  -webkit-animation-delay: 0.5625s;
+          animation-delay: 0.5625s;
+}
+.forward .closedHat:nth-child(16n + 4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.forward .closedHat:nth-child(16n + 5) {
+  -webkit-animation-delay: 0.9375s;
+          animation-delay: 0.9375s;
+}
+.forward .closedHat:nth-child(16n + 6) {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
+}
+.forward .closedHat:nth-child(16n + 7) {
+  -webkit-animation-delay: 1.3125s;
+          animation-delay: 1.3125s;
+}
+.forward .closedHat:nth-child(16n + 8) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.forward .closedHat:nth-child(16n + 9) {
+  -webkit-animation-delay: 1.6875s;
+          animation-delay: 1.6875s;
+}
+.forward .closedHat:nth-child(16n + 10) {
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+.forward .closedHat:nth-child(16n + 11) {
+  -webkit-animation-delay: 2.0625s;
+          animation-delay: 2.0625s;
+}
+.forward .closedHat:nth-child(16n + 12) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+.forward .closedHat:nth-child(16n + 13) {
+  -webkit-animation-delay: 2.4375s;
+          animation-delay: 2.4375s;
+}
+.forward .closedHat:nth-child(16n + 14) {
+  -webkit-animation-delay: 2.625s;
+          animation-delay: 2.625s;
+}
+.forward .closedHat:nth-child(16n + 15) {
+  -webkit-animation-delay: 2.8125s;
+          animation-delay: 2.8125s;
+}
+.forward .closedHat:nth-child(16n + 16) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.loading .closedHat {
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+@-webkit-keyframes closedHatSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #30B034;
+  }
+}
+
+@keyframes closedHatSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #30B034;
+  }
+}
+
+
+.snare {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.forward .snare {
+  -webkit-animation: snareSequencer 3s linear infinite;
+          animation: snareSequencer 3s linear infinite;
+}
+.forward .snare:nth-child(16n + 0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.forward .snare:nth-child(16n + 1) {
+  -webkit-animation-delay: 0.1875s;
+          animation-delay: 0.1875s;
+}
+.forward .snare:nth-child(16n + 2) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+.forward .snare:nth-child(16n + 3) {
+  -webkit-animation-delay: 0.5625s;
+          animation-delay: 0.5625s;
+}
+.forward .snare:nth-child(16n + 4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.forward .snare:nth-child(16n + 5) {
+  -webkit-animation-delay: 0.9375s;
+          animation-delay: 0.9375s;
+}
+.forward .snare:nth-child(16n + 6) {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
+}
+.forward .snare:nth-child(16n + 7) {
+  -webkit-animation-delay: 1.3125s;
+          animation-delay: 1.3125s;
+}
+.forward .snare:nth-child(16n + 8) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.forward .snare:nth-child(16n + 9) {
+  -webkit-animation-delay: 1.6875s;
+          animation-delay: 1.6875s;
+}
+.forward .snare:nth-child(16n + 10) {
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+.forward .snare:nth-child(16n + 11) {
+  -webkit-animation-delay: 2.0625s;
+          animation-delay: 2.0625s;
+}
+.forward .snare:nth-child(16n + 12) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+.forward .snare:nth-child(16n + 13) {
+  -webkit-animation-delay: 2.4375s;
+          animation-delay: 2.4375s;
+}
+.forward .snare:nth-child(16n + 14) {
+  -webkit-animation-delay: 2.625s;
+          animation-delay: 2.625s;
+}
+.forward .snare:nth-child(16n + 15) {
+  -webkit-animation-delay: 2.8125s;
+          animation-delay: 2.8125s;
+}
+.forward .snare:nth-child(16n + 16) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.loading .snare {
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+@-webkit-keyframes snareSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #FFFF00;
+  }
+}
+
+@keyframes snareSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #FFFF00;
+  }
+}
+
+.kick {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.forward .kick {
+  -webkit-animation: kickSequencer 3s linear infinite;
+          animation: kickSequencer 3s linear infinite;
+}
+.forward .kick:nth-child(16n + 0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.forward .kick:nth-child(16n + 1) {
+  -webkit-animation-delay: 0.1875s;
+          animation-delay: 0.1875s;
+}
+.forward .kick:nth-child(16n + 2) {
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+.forward .kick:nth-child(16n + 3) {
+  -webkit-animation-delay: 0.5625s;
+          animation-delay: 0.5625s;
+}
+.forward .kick:nth-child(16n + 4) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.forward .kick:nth-child(16n + 5) {
+  -webkit-animation-delay: 0.9375s;
+          animation-delay: 0.9375s;
+}
+.forward .kick:nth-child(16n + 6) {
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
+}
+.forward .kick:nth-child(16n + 7) {
+  -webkit-animation-delay: 1.3125s;
+          animation-delay: 1.3125s;
+}
+.forward .kick:nth-child(16n + 8) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.forward .kick:nth-child(16n + 9) {
+  -webkit-animation-delay: 1.6875s;
+          animation-delay: 1.6875s;
+}
+.forward .kick:nth-child(16n + 10) {
+  -webkit-animation-delay: 1.875s;
+          animation-delay: 1.875s;
+}
+.forward .kick:nth-child(16n + 11) {
+  -webkit-animation-delay: 2.0625s;
+          animation-delay: 2.0625s;
+}
+.forward .kick:nth-child(16n + 12) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+.forward .kick:nth-child(16n + 13) {
+  -webkit-animation-delay: 2.4375s;
+          animation-delay: 2.4375s;
+}
+.forward .kick:nth-child(16n + 14) {
+  -webkit-animation-delay: 2.625s;
+          animation-delay: 2.625s;
+}
+.forward .kick:nth-child(16n + 15) {
+  -webkit-animation-delay: 2.8125s;
+          animation-delay: 2.8125s;
+}
+.forward .kick:nth-child(16n + 16) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.loading .kick {
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+@-webkit-keyframes kickSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #FF00E1;
+  }
+}
+
+@keyframes kickSequencer {
+  0% {
+    background: #dbdbdb;
+  }
+  30% {
+    background: #FF00E1;
+  }
 }
