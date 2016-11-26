@@ -4,12 +4,47 @@
       <meta charset="UTF-8">
       <title>Beatmap</title>
       <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+       <script src="https://use.fontawesome.com/3c387bce05.js"></script>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="buttons.css">
    </head>
    <body>
-      <div class="logo-head">
-         <img class="logo" src="img/beatmap.png"/>
-      </div>
+       <nav>
+       <img class="logo" src="img/beatmap.png"/>
+       </nav>
+     		<!-- PIN & LOAD CONTROLS -->
+       <div id='file-controls'>
+        <button class="button button-3d button-box button-caution gridControlButton"><i class="fa fa-times" id="reset"></i></button>   
+        <button class="button button-3d button-box button-caution gridControlButton" id="audio"><i class="fa fa-volume-up"></i></button>
+
+        <button class="button button-3d button-box button-caution SaveLoadButton" id="save"><i class="fa fa-download"></i></button>
+
+        <button class="button button-3d button-box button-caution SaveLoadButton" id="load"><i class="fa fa-upload"></i></button>
+
+       </div>
+  
+
+<!-- UI POPUPS -->
+<div id='ui-widget-overlay'></div>
+<div class='dialog' id='dialogSave'>
+    <h3>Save or Share your loop</h3>
+    <p>Copy &amp; save this code to come back to your song later.</p>
+  <span class='ui-helper-hidden-accessible'>
+    <input type='text'>
+  </span>
+  <textarea id='saveCode' onfocus='this.select()'  type='text'></textarea>
+</div>
+       
+<div class='dialog' id='dialogLoad'>
+<h3>Paste your loop</h3>
+  <p>It should look something like:
+    <br>[;24:1 ;37:1 ;80:1 ;84:1 ;7:1 ;3:1 ;15]</br>
+    <textarea id='importCode' type='text'></textarea>
+  </p>
+</div>
+
+
+
       <div class="align">
          <!-- IT'S ABOUT TO GET WILD FOR 1000 LINES -->
          <div class='loading' id='board'>
@@ -1635,14 +1670,30 @@
             <span>&#9702;</span>
             <span>&#9702;</span>
             <span>&#9702;</span>
-         </div>
+         </div>		 
+		 
+		 
+		 
+		 
+		 
          <footer>&copy; Cieran Neeson, Manus Gallagher, Joey Hughes</footer>
+		 
+		 
+
+		 
+		 
+		 
       </div>
       <!-- WON'T SOMEBODY PLEASE THINK OF THE CHILDREN -->
       <script src='js/jquery.min.js'></script>
       <script src='js/jquery-ui.min.js'></script>
       <script src='js/howler.min.js'></script>
       <script src="js/index.js"></script> 
+	  
+	  <!-- scripts for the recorder -->
+	  <script src="js/WavAudioEncoder.min.js"></script> 
+	  
+ 
 	  
    </body>
 </html>

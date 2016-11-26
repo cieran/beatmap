@@ -9,6 +9,7 @@ $(document).ready(function() {
 		note = $('.note');
 	var notes = [];
 	
+	
 	var sampleList = ['kick', 'snare', 'openHat', 'closedHat'];
 	var sampleListCount = 0;
 
@@ -39,7 +40,10 @@ $(document).ready(function() {
 
 		wLoaded = true;
 		if (nLoaded)
-			$('#board').removeClass('loading').addClass('forward');
+		{
+		$('#board').removeClass('loading').addClass('forward');
+		
+		}
 
 		for (var i = 0; i < rows; i++) {
 			bindNote(i);
@@ -85,6 +89,25 @@ $(document).ready(function() {
 		}).mouseup(function() {
 			$(note).unbind('mouseover');
 		});
+		$("#dialogSave").dialog({
+			autoOpen: false,
+			modal: true,
+			closeText: "&otimes;",
+			hide: 200
+		});
+		$("#dialogLoad").dialog({
+			autoOpen: false,
+			buttons: [{
+				text: "Click to Play",
+				click: function() {
+					importLoop($(this));
+				}
+			}],
+			modal: true,
+			closeText: "&otimes;",
+			hide: 200
+		});		
+		
 	}
 
 	function initControls() {
@@ -97,8 +120,110 @@ $(document).ready(function() {
 			else
 				Howler.mute();
 			$(this).toggleClass('mute');
+			
+			var cloneOfOriginalHtml= $(".align").clone();
+		});
+		$('#save').on('click', function() {
+			if ($(".dialog").dialog("isOpen") !== true)
+				exportLoop();
+		});
+		$('#load').on('click', function() {
+			if ($(".dialog").dialog("isOpen") !== true)
+				$("#dialogLoad").dialog("open");
+		});
+
+		$('.ui-dialog').on('dialogopen', function(event) {
+			$('body').addClass('no-overflow');
+			Howler.volume(0.3);
+			$('#ui-widget-overlay').addClass('visible');
+		}).on('dialogclose', function(event) {
+			$('body').removeClass('no-overflow');
+			Howler.volume(1);
+			$('textarea#saveCode').val('');
+			$('#ui-widget-overlay').removeClass('visible');
 		});
 		
 	}
 
+		//:x represents ON //;x represents OFF
+	function exportLoop() {
+		var noteCode = "",
+			offCount = 0,
+			onCount = 0;
+
+		holder.each(function() {
+			if ($(this).hasClass('active')) {
+				if (offCount > 0)
+					noteCode = noteCode + ";" + offCount;
+				onCount++;
+				offCount = 0;
+			} else {
+				if (onCount > 0)
+					noteCode = noteCode + ":" + onCount + " ";
+				offCount++;
+				onCount = 0;
+			}
+		});
+
+		if (offCount > 0)
+			noteCode = noteCode + ";" + offCount;
+		else if (onCount > 0)
+			noteCode = noteCode + ":" + onCount;
+
+		$("#saveCode").val("[" + noteCode + "]");
+		$("#dialogSave").dialog("open");
+	}
+
+	function importLoop(dialog) {
+		var noteCode = '',
+			 noteState,
+			 error = false,
+			 note;
+
+		noteCode = dialog.find('textarea#importCode').val();
+		dialog.dialog("close");
+
+		noteCode = noteCode.replace("[", "");
+		noteCode = noteCode.replace("]", "");
+
+		if (noteCode.charAt(0) === ":")
+			noteState = 1;
+		else if (noteCode.charAt(0) === ";")
+			noteState = 0;
+		else {
+			alert("Your note code wasn't recognised");
+			error = true;
+		}
+
+		if (!error) {
+			$('.active').removeClass('active');
+			noteCode = noteCode.substr(1);
+			var splitCode = noteCode.split(/:|;/g);
+			var noteCounter = 0;
+
+			for (i = 0; i < splitCode.length; i++) {
+				var currNum = parseInt(splitCode[i]);
+
+				if (noteState) {
+					for (var n = 0; n < currNum; n++) {
+						noteCounter++;
+						note = $('#board span:nth-child(' + noteCounter + ')');
+						note.addClass('active');
+						note.children().addClass('active');
+					}
+				} else {
+					noteCounter = noteCounter + currNum;
+				}
+				noteState = !noteState;
+			}
+		}
+	}
+    
+
+    $("#audio").click(function() {
+        $(this).find('i').toggleClass('fa-volume-up fa-volume-off');
+    });
+
 });
+
+
