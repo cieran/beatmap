@@ -161,29 +161,29 @@ footer{
 
 @-webkit-keyframes line {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #F36E6B;
+    background: #ff6961;
   }
 }
 
 @keyframes line {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #F36E6B;
+    background: #ff6961;
   }
 }
 @-webkit-keyframes pulse {
   40% {
-    background: #fff;
+    background: #e5e5e5;
   }
 }
 @keyframes pulse {
   40% {
-    background: #fff;
+    background: #e5e5e5;
   }
 }
 @media (max-width: 480px) {
@@ -366,19 +366,19 @@ footer{
 
 @-webkit-keyframes openHatSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #3333cc;
+    background: #4CA6FF;
   }
 }
 
 @keyframes openHatSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #3333cc;
+    background: #4CA6FF;
   }
 }
 
@@ -472,19 +472,19 @@ footer{
 
 @-webkit-keyframes closedHatSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #30B034;
+    background: #9FE756;
   }
 }
 
 @keyframes closedHatSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #30B034;
+    background: #9FE756;
   }
 }
 
@@ -578,19 +578,19 @@ footer{
 
 @-webkit-keyframes snareSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #FFFF00;
+    background: #FFFF66;
   }
 }
 
 @keyframes snareSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #FFFF00;
+    background: #FFFF66;
   }
 }
 
@@ -683,66 +683,21 @@ footer{
 
 @-webkit-keyframes kickSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #FF00E1;
+    background: #ff93ff;
   }
 }
 
 @keyframes kickSequencer {
   0% {
-    background: #dbdbdb;
+    background: #e5e5e5;
   }
   30% {
-    background: #FF00E1;
+    background: #ff93ff;
   }
 }
-
-.gridControlButton {
-    background-color: #5F1CC0;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-	border-radius: 8px;
-	border: 2px solid #5F1CC0;
-	
-	/*transition */
-	-moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    -webkit-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-}
-
-
-
-.SaveLoadButton {
-    background-color: #DC0000;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-	border-radius: 8px;
-	border: 2px solid #DC0000;
-	
-	/*transition */
-	-moz-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
-    -webkit-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-}
-
 
 #file-controls {
 
@@ -891,7 +846,7 @@ footer{
 
 @-webkit-keyframes line {
   0% {
-    background: #fff;
+    background: #e5e5e5;
   }
   30% {
     background: #F36E6B;
@@ -900,7 +855,7 @@ footer{
 
 @keyframes line {
   0% {
-    background: #fff;
+    background: #e5e5e5;
   }
   30% {
     background: #F36E6B;
