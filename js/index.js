@@ -6,7 +6,11 @@ var wLoaded = false,
 
 $(document).ready(function() {
 	var holder = $('#board .holder'),
-		note = $('.note');
+		note = $('.note'),
+		openHat= $('#board .openHat'),
+		closedHat= $('#board .closedHat'),
+		snare= $('#board .snare'),
+		kick= $('#board .kick');
 	var notes = [];
 	
 	
@@ -164,6 +168,59 @@ $(document).ready(function() {
 				onCount = 0;
 			}
 		});
+		
+		openHat.each(function() {
+			if ($(this).hasClass('active')) {
+				if (offCount > 0)
+					noteCode = noteCode + ";" + offCount;
+				onCount++;
+				offCount = 0;
+			} else {
+				if (onCount > 0)
+					noteCode = noteCode + ":" + onCount + " ";
+				offCount++;
+				onCount = 0;
+			}
+		}); 
+		closedHat.each(function() {
+			if ($(this).hasClass('active')) {
+				if (offCount > 0)
+					noteCode = noteCode + ";" + offCount;
+				onCount++;
+				offCount = 0;
+			} else {
+				if (onCount > 0)
+					noteCode = noteCode + ":" + onCount + " ";
+				offCount++;
+				onCount = 0;
+			}
+		}); 
+		snare.each(function() {
+			if ($(this).hasClass('active')) {
+				if (offCount > 0)
+					noteCode = noteCode + ";" + offCount;
+				onCount++;
+				offCount = 0;
+			} else {
+				if (onCount > 0)
+					noteCode = noteCode + ":" + onCount + " ";
+				offCount++;
+				onCount = 0;
+			}
+		}); 
+		kick.each(function() {
+			if ($(this).hasClass('active')) {
+				if (offCount > 0)
+					noteCode = noteCode + ";" + offCount;
+				onCount++;
+				offCount = 0;
+			} else {
+				if (onCount > 0)
+					noteCode = noteCode + ":" + onCount + " ";
+				offCount++;
+				onCount = 0;
+			}
+		}); 
 
 		if (offCount > 0)
 			noteCode = noteCode + ";" + offCount;
