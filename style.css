@@ -716,6 +716,14 @@ footer{
     margin: 3px;
 }
 
+#file-controls select{
+    color: #ff6961;
+    background-color: #e5e5e5;
+    outline: 0;
+    border-color: #ff6961;
+    margin: 3px;
+}
+
 
 .ui-dialog {
     text-align: center;

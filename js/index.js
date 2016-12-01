@@ -135,6 +135,55 @@ $(document).ready(function() {
 			if ($(".dialog").dialog("isOpen") !== true)
 				$("#dialogLoad").dialog("open");
 		});
+		$('#beatSelection').on('change',function(){			
+			var noteCode = '',
+			 noteState,
+			 error = false,
+			 note;
+
+			 
+		noteCode = document.getElementById("beatSelection").value;
+		
+		
+
+		noteCode = noteCode.replace("[", "");
+		noteCode = noteCode.replace("]", "");
+
+		if (noteCode.charAt(0) === ":")
+			noteState = 1;
+		else if (noteCode.charAt(0) === ";")
+			noteState = 0;
+		else {
+			alert("Your note code wasn't recognised");
+			error = true;
+		}
+
+		if (!error) {
+			$('.active').removeClass('active');
+			noteCode = noteCode.substr(1);
+			var splitCode = noteCode.split(/:|;/g);
+			var noteCounter = 0;
+
+			for (i = 0; i < splitCode.length; i++) {
+				var currNum = parseInt(splitCode[i]);
+
+				if (noteState) {
+					for (var n = 0; n < currNum; n++) {
+						noteCounter++;
+						note = $('#board span:nth-child(' + noteCounter + ')');
+						note.addClass('active');
+						note.children().addClass('active');
+					}
+				} else {
+					noteCounter = noteCounter + currNum;
+				}
+				noteState = !noteState;
+			}
+		}
+			
+			
+		});
+		
 
 		$('.ui-dialog').on('dialogopen', function(event) {
 			$('body').addClass('no-overflow');
@@ -282,5 +331,46 @@ $(document).ready(function() {
     });
 
 });
+
+/*function loadPresetBeat(){
+	var noteCode = document.getElementById("beatSelection").value;
+	
+	window.alert(noteCode);
+		noteCode = noteCode.replace("[", "");
+		noteCode = noteCode.replace("]", "");
+
+		if (noteCode.charAt(0) === ":")
+			noteState = 1;
+		else if (noteCode.charAt(0) === ";")
+			noteState = 0;
+		else {
+			alert("Your note code wasn't recognised");
+			error = true;
+		}
+
+		if (!error) {
+			$('.active').removeClass('active');
+			noteCode = noteCode.substr(1);
+			var splitCode = noteCode.split(/:|;/g);
+			var noteCounter = 0;
+
+			for (i = 0; i < splitCode.length; i++) {
+				var currNum = parseInt(splitCode[i]);
+
+				if (noteState) {
+					for (var n = 0; n < currNum; n++) {
+						noteCounter++;
+						note = $('#board span:nth-child(' + noteCounter + ')');
+						note.addClass('active');
+						note.children().addClass('active');
+					}
+				} else {
+					noteCounter = noteCounter + currNum;
+				}
+				noteState = !noteState;
+			}
+		}
+	
+} */
 
 
