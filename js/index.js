@@ -12,6 +12,7 @@ $(document).ready(function() {
 		snare= $('#board .snare'),
 		kick= $('#board .kick');
 	var notes = [];
+	var instrument = "";
 	
 	
 	var sampleList = ['kick', 'snare', 'openHat', 'closedHat'];
@@ -26,6 +27,7 @@ $(document).ready(function() {
 				],
 				onload: loadCount(i + 1)
 			});
+			instrument = "marimba";
 		}else{
 			notes[i] = new Howl({
 				urls: ['https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav',
@@ -34,8 +36,7 @@ $(document).ready(function() {
 				onload: loadCount(i + 1)
 				});
 				sampleListCount++;
-				console.log('https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav');
-		}				
+			}				
 	}
 
 	$(window).load(function() {
@@ -328,6 +329,58 @@ $(document).ready(function() {
 
     $("#audio").click(function() {
         $(this).find('i').toggleClass('fa-volume-up fa-volume-off');
+    });
+
+    $("#toggle").click(function() {
+    	var sampleList = ['kick', 'snare', 'openHat', 'closedHat'];
+		var sampleListCount = 0;
+
+    	if(instrument=="marimba"){
+    		for (var i = 0; i < rows; i++) {			
+				if(i<=15){
+					notes[i] = new Howl({
+						urls: ['./notes/' + i + '.wav'
+						],
+						onload: loadCount(i + 1)
+					});
+					instrument = "marimba";
+				}else{
+					notes[i] = new Howl({
+						urls: ['https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav',
+							'https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav'
+						],
+						onload: loadCount(i + 1)
+						});
+						sampleListCount++;
+						console.log('https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav');
+				}				
+			}
+			instrument="piano";
+    	}
+    	else if(instrument=="piano"){
+    		for (var i = 0; i < rows; i++) {			
+				if(i<=15){
+					notes[i] = new Howl({
+						urls: ['https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/' + i + '.mp3',
+							'https://s3-us-west-2.amazonaws.com/s.cdpn.io/380275/' + i + '.ogg'
+						],
+						onload: loadCount(i + 1)
+					});
+					instrument = "marimba";
+				}else{
+					notes[i] = new Howl({
+						urls: ['https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav',
+							'https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav'
+						],
+						onload: loadCount(i + 1)
+						});
+						sampleListCount++;
+						console.log('https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav');
+				}				
+			}
+    		instrument = "marimba";
+    	}
+        
     });
 
 });
