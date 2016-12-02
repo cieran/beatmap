@@ -36,8 +36,7 @@ $(document).ready(function() {
 				onload: loadCount(i + 1)
 				});
 				sampleListCount++;
-				console.log('https://dl.dropboxusercontent.com/u/42386473/cp/samples/' + sampleList[sampleListCount] + '.wav');
-		}				
+			}				
 	}
 
 	$(window).load(function() {
@@ -357,7 +356,6 @@ $(document).ready(function() {
 				}				
 			}
 			instrument="piano";
-    		console.log("Was marimba, now " + instrument);
     	}
     	else if(instrument=="piano"){
     		for (var i = 0; i < rows; i++) {			
@@ -381,7 +379,6 @@ $(document).ready(function() {
 				}				
 			}
     		instrument = "marimba";
-    		console.log("Was piano, now " + instrument);
     	}
         
     });
